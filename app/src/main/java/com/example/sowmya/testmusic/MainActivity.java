@@ -47,6 +47,12 @@ public class MainActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        initviews();
+    }
+
+
+    public void initviews()
+    {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -76,11 +82,13 @@ public class MainActivity extends AppCompatActivity
         tabLayout = (TabLayout) findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(viewPager);
         setupTabIcons();
-
         tabLayout.addOnTabSelectedListener(onTabSelectedListener(viewPager));
 
 
     }
+
+
+
 
     @Override
     public void onBackPressed() {
