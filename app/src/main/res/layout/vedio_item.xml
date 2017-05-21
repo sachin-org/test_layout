@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:layout_margin="07dp"
+    android:elevation="05dp"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="6.5">
+
+            <ImageView
+                android:id="@+id/vedio_item_rv_img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="05dp"
+            android:layout_marginTop="05dp"
+            android:paddingLeft="10dp"
+            android:layout_weight="3.5"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/vedio_item_songname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:textColor="@android:color/black"
+                android:text="jjjj"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/vedio_item_postedname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="03dp"
+                android:drawableLeft="@drawable/clock_15"
+                android:drawablePadding="10dp"
+                android:textSize="13sp"
+                android:text="jjjj"
+                android:inputType="textCapWords"
+                android:textColor="@color/divider" />
+
+            <TextView
+                android:id="@+id/vedio_item_songtext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="05dp"
+                android:text="jjjj"
+                android:textSize="11sp"
+                android:textColor="@color/divider" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
